@@ -1,0 +1,69 @@
+<html>
+<head>
+   <title> animated banner links</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+      .bannerCover {
+         margin: 0;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .banner{
+         box-shadow: 0 0 5px gray;
+         padding:2rem;
+         border-radius: 5px;
+         text-align: center;
+      }
+   
+      a {
+         text-decoration: none;
+         font-weight: 800;
+         font-size: 2rem;
+         color: green;
+         padding: 0 2rem;
+         animation: zoomup 1s linear alternate infinite;
+      }
+      @keyframes zoomup{
+         0%{
+            font-size: 2rem;
+         }
+         25%{
+            font-size: 2rem;
+         }
+         50%{
+            font-size: 1.8rem;
+            border-radius: 5px;
+            padding: 0.2rem 0.5rem;
+            color: white;
+            background-color: red;
+         }
+         75%{
+            font-size: 1.8rem;
+            border-radius: 5px;
+            padding: 0.2rem 0.5rem;
+            color: white;
+            background-color: yellow;
+         }
+         100%{
+            font-size: 1.8rem;
+            border-radius: 5px;
+            padding: 0.2rem 0.5rem;
+            color: white;
+            background-color: red;
+         }
+      }
+   </style> 
+</head>
+<body>
+   <div class="bannerCover">
+      <div class="banner">
+         <a href="https://www.chimoneycommunity">Chimoney Community</a>
+         <p>(Thank you Chimoney! waiting for an immediate response!.)</p>
+      </div>
+   </div>
+</body>
+</html>
